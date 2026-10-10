@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Clock, MapPin } from 'lucide-react'
+import { Clock, MapPin, Navigation } from 'lucide-react'
 import { wedding } from '@/lib/wedding'
 import { Reveal } from './reveal'
 import { SectionHeading } from './section-heading'
@@ -60,6 +60,15 @@ export function CeremonySection() {
           <p className="mt-8 text-base italic text-muted-foreground">
             Point your phone camera at the code
           </p>
+          <a
+            href={wedding.mapUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-serif text-sm font-semibold tracking-[0.2em] text-primary-foreground shadow-lg transition hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
+          >
+            <Navigation className="size-4" aria-hidden="true" />
+            VIEW ON GOOGLE MAPS
+          </a>
         </div>
       </Reveal>
     </section>

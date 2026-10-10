@@ -1,4 +1,3 @@
-import { CalendarHeart } from 'lucide-react'
 import { wedding } from '@/lib/wedding'
 import { Countdown } from './countdown'
 import { Reveal } from './reveal'
@@ -19,11 +18,6 @@ export function SaveTheDate() {
           <ScratchCard label="Month" value={wedding.month} />
           <ScratchCard label="Year" value={wedding.year} />
         </div>
-
-        <p className="mt-10 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-serif text-sm font-semibold tracking-[0.25em] text-primary-foreground shadow-lg">
-          <CalendarHeart className="size-4" aria-hidden="true" />
-          {'22 • 11 • 2026 | SUNDAY'}
-        </p>
       </Reveal>
 
       <Reveal delay={150} className="mt-20 flex w-full max-w-md flex-col items-center">
